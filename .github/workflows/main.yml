@@ -30,4 +30,4 @@ jobs:
         run: |
             #docker build -t latest .
             #docker run  --name nlu_test_run_container latest 
-            python3.6 test.py
+            python test.py
