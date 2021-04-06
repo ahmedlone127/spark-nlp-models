@@ -112,16 +112,16 @@ def crawl_discord(channel,initial_total_messages, messages_per_loop,amount_of_ti
 		driver.find_element_by_xpath('//*[@id="dht-ctrl-track"]').click()
 		time.sleep(2)
 		driver.find_element_by_xpath('//*[@id="dht-ctrl-download"]').click()
-crawl_discord("https://discord.com/channels/267624335836053506/729674110270963822",2000,100,100,folder_name_,1)
+crawl_discord("https://discord.com/channels/267624335836053506/729674110270963822",20000,100,100,folder_name_,1)
 list_of_jsons =(get_path(f"/tmp/{folder_name_}",".txt"))
 for text_file_ in list_of_jsons: 
 	json_to_csv(text_file_)
 list_of_csvs =(get_path(f"/tmp/{folder_name_}",".csv"))
-df = pd.read_csv(list_of_csvs[0])
-for csv in list_of_csvs :
-	df1= pd.read_csv(csv)
-	df = pd.concat([df,df1])
-df =df[["text","author","sent_at"]]
-df.drop_duplicates(subset='sent_at',keep="first",inplace=True)
+df = pd.read_csv(f'/tmp/{folder_name_}/dht.csv')
+#for csv in list_of_csvs :
+#	df1= pd.read_csv(csv) 
+#	df = pd.concat([df,df1])
+#df =df[["text","author","sent_at"]]
+#df.drop_duplicates(subset='sent_at',keep="first",inplace=True)
 print(df)
 df.to_csv(f"/tmp/{folder_name_}/{folder_name_}.csv")
