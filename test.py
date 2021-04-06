@@ -112,7 +112,7 @@ def crawl_discord(channel,initial_total_messages, messages_per_loop,amount_of_ti
 		driver.find_element_by_xpath('//*[@id="dht-ctrl-track"]').click()
 		time.sleep(2)
 		driver.find_element_by_xpath('//*[@id="dht-ctrl-download"]').click()
-crawl_discord("https://discord.com/channels/267624335836053506/366674035876167691",2000,100,100,folder_name_,1)
+crawl_discord("https://discord.com/channels/267624335836053506/729674110270963822",2000,100,100,folder_name_,1)
 list_of_jsons =(get_path(f"/tmp/{folder_name_}",".txt"))
 for text_file_ in list_of_jsons: 
 	json_to_csv(text_file_)
