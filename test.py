@@ -118,10 +118,10 @@ for text_file_ in list_of_jsons:
 	json_to_csv(text_file_)
 list_of_csvs =(get_path(f"/tmp/{folder_name_}",".csv"))
 df = pd.read_csv(f'/tmp/{folder_name_}/dht.csv')
-#for csv in list_of_csvs :
-#	df1= pd.read_csv(csv) 
-#	df = pd.concat([df,df1])
-#df =df[["text","author","sent_at"]]
+for csv in list_of_csvs :
+	df1= pd.read_csv(csv) 
+	df = pd.concat([df,df1])
+df =df[["text","author","sent_at"]]
 #df.drop_duplicates(subset='sent_at',keep="first",inplace=True)
 print(df)
 df.to_csv(f"/tmp/{folder_name_}/{folder_name_}.csv")
