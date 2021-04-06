@@ -37,4 +37,6 @@ RUN wget --no-verbose -O /tmp/geckodriver.tar.gz https://github.com/mozilla/geck
   && ln -fs /opt/geckodriver-$GECKODRIVER_VERSION /usr/bin/wires
 
 COPY . . 
+RUN python3.6 -m pip install   pandas \
+	&& python3.6 -m pip install selenium
 CMD ["python3.6", "test.py"]
