@@ -66,7 +66,7 @@ def crawl_discord(channel,initial_total_messages, messages_per_loop,amount_of_ti
 	worked  = False
 	profile.set_preference("browser.download.dir", f"/tmp/{folder_name}")
 	profile.set_preference("browser.download.folderList",2)	
-	options.add_argument("--headless")
+	#options.add_argument("--headless")
 	driver = webdriver.Firefox(firefox_profile=profile,options=options) 
 	driver.get(channel)
 	time.sleep(15)
