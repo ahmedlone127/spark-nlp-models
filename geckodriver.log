@@ -4351,3 +4351,20 @@ interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
 webdriverClickElement@chrome://marionette/content/interaction.js:179:31
 JavaScript warning: https://discord.com/assets/edc2ce08ad824f09477f.js, line 2: unreachable code after return statement
 JavaScript warning: https://discord.com/assets/edc2ce08ad824f09477f.js, line 2: unreachable code after return statement
+1617722656367	geckodriver	INFO	Listening on 127.0.0.1:49208
+1617722663141	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\dell\\AppData\\Local\\Temp\\rust_mozprofilekoVUIV"
+1617722666449	Marionette	INFO	Listening on port 49218
+1617722666866	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://discord.com/assets/edc2ce08ad824f09477f.js, line 2: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/edc2ce08ad824f09477f.js, line 2: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/edc2ce08ad824f09477f.js, line 2: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/edc2ce08ad824f09477f.js, line 2: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/edc2ce08ad824f09477f.js, line 2: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/edc2ce08ad824f09477f.js, line 2: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/edc2ce08ad824f09477f.js, line 2: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/edc2ce08ad824f09477f.js, line 2: unreachable code after return statement
+_create_dc_and_bitmap: The operation completed successfully.
+1617722799978	Marionette	INFO	Stopped listening on port 49218
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
